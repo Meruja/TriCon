@@ -1,18 +1,55 @@
+
+/*
+ *  Copyright 2017 copyright to triconnect2017@gmail.com
+ *
+ *
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *
+ *    you may not use this file except in compliance with the License.
+ *
+ *    You may obtain a copy of the License at
+ *
+ *
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ *    See the License for the specific language governing permissions and
+ *
+ *    limitations under the License
+ */
+
 package TriCon.model;
 
-/**
- * Created by hp on 8/28/2017.
- */
+
+import org.springframework.data.annotation.Id;
+
 public class ProgressReport {
+    @Id
+
+    private String id;
     private String IndId;
-    private String JournalId;
-    private String ProgressId;
-    private String Authorized_Attendance;
-    private String Unauthorized_Attendance;
-    private String AttitudeToWork;
+    private String AuthLeave;
+    private String UnAuthLeave;
+    private String Attitude;
     private String Conduct;
     private String IndSign;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getIndId() {
         return IndId;
@@ -22,44 +59,28 @@ public class ProgressReport {
         IndId = indId;
     }
 
-    public String getJournalId() {
-        return JournalId;
+    public String getAuthLeave() {
+        return AuthLeave;
     }
 
-    public void setJournalId(String journalId) {
-        JournalId = journalId;
+    public void setAuthLeave(String authLeave) {
+        AuthLeave = authLeave;
     }
 
-    public String getProgressId() {
-        return ProgressId;
+    public String getUnAuthLeave() {
+        return UnAuthLeave;
     }
 
-    public void setProgressId(String progressId) {
-        ProgressId = progressId;
+    public void setUnAuthLeave(String unAuthLeave) {
+        UnAuthLeave = unAuthLeave;
     }
 
-    public String getAuthorized_Attendance() {
-        return Authorized_Attendance;
+    public String getAttitude() {
+        return Attitude;
     }
 
-    public void setAuthorized_Attendance(String authorized_Attendance) {
-        Authorized_Attendance = authorized_Attendance;
-    }
-
-    public String getUnauthorized_Attendance() {
-        return Unauthorized_Attendance;
-    }
-
-    public void setUnauthorized_Attendance(String unauthorized_Attendance) {
-        Unauthorized_Attendance = unauthorized_Attendance;
-    }
-
-    public String getAttitudeToWork() {
-        return AttitudeToWork;
-    }
-
-    public void setAttitudeToWork(String attitudeToWork) {
-        AttitudeToWork = attitudeToWork;
+    public void setAttitude(String attitude) {
+        Attitude = attitude;
     }
 
     public String getConduct() {

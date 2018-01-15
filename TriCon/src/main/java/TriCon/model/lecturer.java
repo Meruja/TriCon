@@ -1,28 +1,61 @@
+
+/*
+ *  Copyright 2017 copyright to triconnect2017@gmail.com
+ *
+ *
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *
+ *    you may not use this file except in compliance with the License.
+ *
+ *    You may obtain a copy of the License at
+ *
+ *
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ *    See the License for the specific language governing permissions and
+ *
+ *    limitations under the License
+ */
+
 package TriCon.model;
 
 import org.springframework.data.annotation.Id;
 
-public class Lecturer
-{
+public class Lecturer {
     @Id
-    private String Id;
-    private String LectId;
+    private String id;
+    private String FirstName;
     private String LastName;
     private String Email;
-    private String Address;
-    private String University;
-    private String DeptName;
     private String DeptId;
-    private String Linkedin;
+    private String UniId;
+    private String Address;
+    private String MobileNo;
+    private String TPNo;
+    private String LinkedIn;
     private String Twitter;
-    private String Github;
+    private String GitHub;
     private String Facebook;
     private String Blog;
-    private int MobileNo;
-    private int TeleNo;
-    private String LectSign;
-    private String FirstName;
+    private String Signature;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return FirstName;
@@ -48,22 +81,6 @@ public class Lecturer
         Email = email;
     }
 
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String address) {
-        Address = address;
-    }
-
-    public String getUniversity() {
-        return University;
-    }
-
-    public void setUniversity(String university) {
-        University = university;
-    }
-
     public String getDeptId() {
         return DeptId;
     }
@@ -72,12 +89,44 @@ public class Lecturer
         DeptId = deptId;
     }
 
-    public String getLinkedin() {
-        return Linkedin;
+    public String getUniId() {
+        return UniId;
     }
 
-    public void setLinkedin(String linkedin) {
-        Linkedin = linkedin;
+    public void setUniId(String uniId) {
+        UniId = uniId;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String address) {
+        Address = address;
+    }
+
+    public String getMobileNo() {
+        return MobileNo;
+    }
+
+    public void setMobileNo(String mobileNo) {
+        MobileNo = mobileNo;
+    }
+
+    public String getTPNo() {
+        return TPNo;
+    }
+
+    public void setTPNo(String TPNo) {
+        this.TPNo = TPNo;
+    }
+
+    public String getLinkedIn() {
+        return LinkedIn;
+    }
+
+    public void setLinkedIn(String linkedIn) {
+        LinkedIn = linkedIn;
     }
 
     public String getTwitter() {
@@ -88,12 +137,12 @@ public class Lecturer
         Twitter = twitter;
     }
 
-    public String getGithub() {
-        return Github;
+    public String getGitHub() {
+        return GitHub;
     }
 
-    public void setGithub(String github) {
-        Github = github;
+    public void setGitHub(String gitHub) {
+        GitHub = gitHub;
     }
 
     public String getFacebook() {
@@ -112,51 +161,11 @@ public class Lecturer
         Blog = blog;
     }
 
-    public int getMobileNo() {
-        return MobileNo;
+    public String getSignature() {
+        return Signature;
     }
 
-    public void setMobileNo(int mobileNo) {
-        MobileNo = mobileNo;
-    }
-
-    public int getTeleNo() {
-        return TeleNo;
-    }
-
-    public void setTeleNo(int teleNo) {
-        TeleNo = teleNo;
-    }
-
-    public String getLectSign() {
-        return LectSign;
-    }
-
-    public void setLectSign(String lectSign) {
-        LectSign = lectSign;
-    }
-
-    public String getLectId() {
-        return LectId;
-    }
-
-    public void setLectId(String lectId) {
-        LectId = lectId;
-    }
-
-    public String getId() {
-        return Id;
-    }
-
-    public void setId(String id) {
-        Id = id;
-    }
-
-    public String getDeptName() {
-        return DeptName;
-    }
-
-    public void setDeptName(String deptName) {
-        DeptName = deptName;
+    public void setSignature(String signature) {
+        Signature = signature;
     }
 }

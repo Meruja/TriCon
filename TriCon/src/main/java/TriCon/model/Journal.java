@@ -1,11 +1,43 @@
+
+/*
+ *  Copyright 2017 copyright to triconnect2017@gmail.com
+ *
+ *
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *
+ *    you may not use this file except in compliance with the License.
+ *
+ *    You may obtain a copy of the License at
+ *
+ *
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ *    See the License for the specific language governing permissions and
+ *
+ *    limitations under the License
+ */
+
 package TriCon.model;
 
 
+import org.springframework.data.annotation.Id;
+
 public class Journal
 {
-    private String JournalId;
+    @Id
+
+    private String id;
     private String StuId;
-    private String ProgressId;
     private String IndId;
     private String LecId;
     private String Company;
@@ -14,14 +46,14 @@ public class Journal
     private String ContractNo;
     private String From;
     private String To;
-    private String FinalReportId;
+    private String Status;
 
-    public String getJournalId() {
-        return JournalId;
+    public String getId() {
+        return id;
     }
 
-    public void setJournalId(String journalId) {
-        JournalId = journalId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getStuId() {
@@ -32,12 +64,12 @@ public class Journal
         StuId = stuId;
     }
 
-    public String getProgressId() {
-        return ProgressId;
+    public String getIndId() {
+        return IndId;
     }
 
-    public void setProgressId(String progressId) {
-        ProgressId = progressId;
+    public void setIndId(String indId) {
+        IndId = indId;
     }
 
     public String getLecId() {
@@ -46,14 +78,6 @@ public class Journal
 
     public void setLecId(String lecId) {
         LecId = lecId;
-    }
-
-    public String getIndId() {
-        return IndId;
-    }
-
-    public void setIndId(String indId) {
-        IndId = indId;
     }
 
     public String getCompany() {
@@ -104,11 +128,12 @@ public class Journal
         To = to;
     }
 
-    public String getFinalReportId() {
-        return FinalReportId;
+    public String getStatus() {
+        return Status;
     }
 
-    public void setFinalReportId(String finalReportId) {
-        FinalReportId = finalReportId;
+    public void setStatus(String status) {
+        Status = status;
     }
+
 }
